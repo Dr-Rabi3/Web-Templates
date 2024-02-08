@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/login.css">
+  <link rel="stylesheet" href="CSS/all.css">
+  <script src="https://kit.fontawesome.com/f52769425e.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noticia+Text:wght@400;700&display=swap" rel="stylesheet">
+  <title>Login</title>
+</head>
+<body>
+  <span class="back"></span>
+  <div class="container">
+    <div class="text">
+      <h2 class="move" style="font-size: 60px; font-family: 'Dancing Script', cursive;font-weight: bold;">Welcome back!</h2>
+      <p style="font-size: 20px ;margin-top: 25px;margin-bottom: 15px;">Sign in to your account</p>
+    </div>
+    <form action="home.html">
+      <i class="fa-solid fa-lg fa-envelope"></i>
+      <input type="email" placeholder="example@gmail.com" required>
+      <i class="fa-solid fa-lg fa-lock"></i>
+      <input type="password" placeholder="Password" required>
+      <div class="no">
+        <label for="Rem"><input type="checkbox" id="Rem">Remember me</label>
+        <button class="log">SIGN IN</button>
+      </div>
+    </form>
+    <p style="margin: 20px 0px ;">OR</p>
+    <ul class="links">
+      <li><a href="#"><i class="fa-brands fa-xl fa-facebook-f"></i></a></li>
+      <li><a href=""><i class="fa-brands fa-xl fa-twitter"></i></a></li>
+      <li><a href=""><i class="fa-brands fa-xl fa-google-plus-g"></i></a></li>
+    </ul>
+    <div class="signup">
+      Don't have an account ? <a href="regstration.html">SIGN UP</a>
+    </div>
+  </div>
+  <script src="/js/login.js"></script>
+</body>
+</html>

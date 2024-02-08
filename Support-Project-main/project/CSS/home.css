@@ -1,0 +1,447 @@
+:root{
+  --home-color :rgb(249, 222, 222);
+  --word-color:#e6ae4d;
+  --nav-color:#00001a;
+  --num-color:#efedf0;
+  --home2-color:#ffcfc5;
+}
+body{
+  background-color:var(--home-color);
+  font-family: var(--main-font);
+}
+.container{
+  margin: 20px 200px;
+  display: flex;
+  flex-direction: column;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 3px solid var(--main-color);
+  position: sticky;
+  top: 0px;
+  background-color:var(--home-color);
+  z-index: 5555;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.logo h1{
+  font-size: 60px;
+}
+.category{
+  list-style-type: none;
+  display: flex;
+}
+.category > li{
+  margin-right: 20px;
+}
+.category > li > a{
+  text-decoration: none;
+  color: #000;
+  font-size: 23px;
+  transition: 0.3s;
+  padding-bottom: 25px;
+}
+.category > li > a:hover:not(.logOut,.saerch){
+  border-bottom: 5px solid #000;
+}
+ul input{
+  transition: 0.5s;
+  display:none;
+  height: 40px;
+  width: 300px;
+  border-radius: 20px;
+  padding: 8px;
+  border: 3px solid #f26c4f;
+  margin-right: 15px;
+}
+ul input:focus{
+  outline: none;
+}
+ul input::placeholder{
+  color: #beb7b7;
+}
+.logOut{
+  color: red !important;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  padding-bottom: 8px !important;
+}
+.logOut:hover{
+  background-color: red;
+  color: #fff !important;
+}
+.content{
+  display: flex;
+  flex-direction: row;
+  height: 600px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  gap: 40px;
+
+}
+.content > main{
+  width: 70%;
+  height: 100%;
+}
+.image{
+  overflow: hidden;
+  height: 400px;
+  margin-bottom: 20px;
+}
+.image > img{
+  width: 100%;
+}
+main .text{
+  display: flex;
+  width: 100%;
+}
+.text h1 {
+  font-size: 50px;
+  font-weight: bolder;
+  padding: 10px 25px;
+  width: 50%;
+  margin-right: 10px;
+}
+.text .textIn{
+  width: 50%;
+  padding: 10px;
+  font-size: 18px;
+}
+.textIn button{
+  background-color: var(--main-color);
+  width: 200px;
+  padding: 15px;
+  color: #fff;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+  letter-spacing: 0.3rem;
+}
+
+nav{
+  width: 30%;
+  background-color: var(--nav-color);
+  color: #fff;
+  padding: 30px;
+}
+nav div{
+  padding: 20px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  border-bottom: 3px solid #beb7b7;
+}
+nav div h3{
+  margin-bottom: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+nav div p{
+  color: #beb7b7;
+  font-size: 18px;
+}
+
+article{
+  display: flex;
+  margin-bottom: 50px;
+}
+article div{
+  display: flex;
+  width: 40%;
+  border-left: 3px solid var(#b0b0b0);
+}
+article div .text3{
+  display: flex;
+  flex-direction: column;
+}
+article div .text3 h2{
+  color: #b0b0b0;
+  font-size: 40px;
+  cursor: pointer;
+}
+article div .text3 h2 + p{
+  font-size: 18px;
+  font-weight: bolder;
+  margin-bottom: 8px;
+}
+article div .img{
+  width: 120px;
+  height: 160px;
+  margin-right: 20px;
+}
+
+article div .img img{
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio{
+  border-top: 3px solid var(--main-color);
+}
+.portfolio .container ul{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+.portfolio .container ul li{
+  padding: 10px;
+}
+.portfolio .container ul .active{
+  color: #fff;
+  background-color: var(--main-color);
+}
+.portfolio .images{
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 4px dashed var(--main-color);
+  padding: 8px;
+}
+.portfolio .images .box{
+  width: calc(100% / 4);
+  overflow: hidden;
+  position: relative;
+}
+
+.portfolio .images img{
+  width: 100%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.portfolio .images img:hover{
+  transform: rotate(4deg) scale(1.2);
+  -webkit-transform: rotate(4deg) scale(1.2);
+  -moz-transform: rotate(4deg) scale(1.2);
+  -ms-transform: rotate(4deg) scale(1.2);
+  -o-transform: rotate(4deg) scale(1.2);
+}
+.portfolio .images .box .caption{
+  position: absolute;
+  bottom: -80px;
+  background-color: #fff;
+  width: 100%;
+  padding: 20px 15px ;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.portfolio .images .box .caption h4{
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.portfolio .images .box .caption p{
+  font-size: 15px;
+
+  color: var(--main-color);
+}
+.portfolio .images img:hover + .caption{
+  bottom: 0px;
+}
+
+.MORE{
+  margin: 30px ;
+  text-align: center;
+}
+.MORE button{
+  cursor: pointer;
+  padding: 20px;
+  border: none;
+  background-color: var(--main-color);
+  color: #fff;
+}
+.section-home{
+  margin-top: 100px;
+  position: relative;
+}
+.section-home::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 40%);
+}
+.section-home video{
+  width: 100%;
+}
+.section-home .text{
+  position: absolute;
+  width: 100%;
+  padding: 50px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+}
+.section-home .text h2{
+  margin: 0 0 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.section-home .text p{
+  margin-bottom: 30px;
+}
+.section-home .text span{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  text-transform: uppercase;
+}
+
+.contact{
+  border-top: 3px solid var(--main-color);
+}
+
+.special_heading h2{
+  text-align: center;
+  font-weight: normal;
+  font-size: 40px;
+  position: relative;
+  margin-bottom: 70px;
+  text-transform: uppercase;
+}
+.special_heading h2::before{
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background-color: #000;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.special_heading h2::after{
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: #f9dede ;
+  bottom: -38px;
+  left: 50%;
+  border: 2px solid #000;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.special_heading p{
+  width: 550px;
+  margin: 0 auto 100px;
+  max-width: 100%;
+  line-height: 2;
+  color: #777;
+  text-align: center;
+}
+
+
+
+
+.contact .contain{
+  display: flex;
+  justify-content: space-between;
+}
+.contact .contain input{
+  border-radius: 3px;
+
+}
+.contact form{
+  flex-basis: 70%;
+}
+.contact .main-input{
+  padding: 20px;
+  display: block;
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.contact .contain .main-input:focus{
+  outline: none;
+}
+textarea {
+  height: 200px;
+}
+.contact form input[type="submit"]{
+  background-color: var(--main-color);
+  border:none;
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  margin-left: auto;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+.contact .phones{
+  flex-basis: 25%;
+}
+.contact .phones h3{
+  font-weight: normal;
+  margin: 100px 0px 30px ;
+  font-size:18px ;
+}
+.contact .phones h3:first-child{
+  margin-top: 0px;
+}
+.contact .phones p{
+  width: 200px;
+  color: #777;
+  margin: 10px 0px;
+}
+.contact .phones address{
+  width: 200px;
+  color: #777;
+  line-height: 2;
+  margin-bottom: 5px;
+}
+
+
+footer {
+  display: flex;
+  margin-top: 60px;
+  padding: 0px 200px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color:  var(--main-color);
+  text-align: center;
+  color: #fff;
+  box-shadow: 0px -8px 30px 20px var(--main-color);
+}
+.links2 i {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.end{
+  padding-left: 20px;
+  border-left: 3px solid var(--num-color);
+}

@@ -1,0 +1,116 @@
+body{
+  width: 1vh;
+  height: 1vh;
+  background-color: var(--back-color);
+  font-family: var(--main-font);
+  font-size: 18px;
+}
+a{
+  cursor: pointer;
+}
+.back{
+  display: block;
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  background-color: var(--main-color) ;
+  z-index: -1;
+  box-shadow: 25px 0px 47px 10px var(--shadow-color);
+}
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 1400px;
+  height: 800px;
+  background-color: #fff;
+  display: flex;
+  gap: 20px;
+}
+.photo{
+  overflow: hidden;
+  position: relative;
+}
+img{
+  width: 100%;
+}
+.overlay{
+  position: absolute;
+  z-index: 0 ;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(242, 108,79,30%);
+}
+.sign{
+  padding: 40px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+input{
+  height: 50px;
+  padding: 20px;
+  border-radius: 5px;
+  border: 3px solid #ddd;
+}
+input[type = "email"],
+input[type = "password"]{
+  width: 500px;
+}
+input:focus{
+  outline: none;
+}
+.gender{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.male,.female{
+  color: #797575;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #ddd;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #fff;
+  transition: 0.5s;
+}
+.female{
+  margin-left: 15px;
+}
+.male:hover,
+.female:hover{
+  background-color: var(--main-color);
+  border-color: var(--main-color) ;
+  color: #fff;
+}
+.end{
+  display: flex;
+  font-size: 16px;
+  gap: 50px;
+}
+.end > p {
+  width: 60%;
+}
+a{
+  color: var(--main-color);
+  text-decoration: none;
+}
+.end button{
+  width: 20%;
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

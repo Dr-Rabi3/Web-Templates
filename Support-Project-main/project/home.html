@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/all.css">
+  <link rel="stylesheet" href="CSS/home.css">
+  <script src="https://kit.fontawesome.com/f52769425e.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noticia+Text:wght@400;700&display=swap" rel="stylesheet">
+  <title>Home</title>
+  <style>
+    input[type="color"]{
+      opacity: 0;
+      border-radius: 2px;
+      padding: 0;
+      width: 25px;
+      height: 25px;
+      margin-left: -20px;
+      transition: 0.5s;
+    }
+    .logo:hover input[type="color"],
+    .logo:hover input[type="color"] + button,
+    .logo:hover input[type="color"] + button + button{
+      opacity: 1;
+    }
+    .logo button{
+      opacity: 0;
+      background-color: var(--main-color);
+      color: #fff;
+      border-radius: 5px;
+      padding: 5px 10px;
+      border: none;
+      transition: 0.5s;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <h1 class="top">M.</h1>
+        <input class="col" type="color">
+        <button class="btn">Set</button>
+        <button class="btn2">Reset</button>
+      </div>
+      <ul class="category">
+        <li><a href="#" style="border-bottom: 5px solid #000;">Home</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#category">Categories</a></li>
+        <li><a href="#trend">Trending</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <input class="ser2" type="search" state="hadden" placeholder="Search...">
+        <li style="border-right: 3px solid #000"><a class="saerch" href="#" style="padding-right: 15px;"><i class="fas fa-search"></i></a></li>
+        <li><a href="login.html" class="logOut" >Log Out</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <main>
+        <div class="image">
+          <img src="/images/vasilis-chatzopoulos-6lwyzronth8-unsplash.jpeg" alt="">
+        </div>
+        <div class="text">
+          <h1>
+            The Bright Future of Web 3.0 ?
+          </h1>
+          <div class="textIn">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis delectus ut nisi consequatur necessitatibus blanditiis tempora perferendis rem. Ea illum dolores vero id ?</p>
+            <button>READ MORE</button>
+          </div>
+        </div>
+      </main>
+      <nav>
+        <h2 style="color: var(--word-color);margin-bottom: 10px; font-size: 45px;">New</h2>
+        <div class="newOne" style="padding-top: 20px;">
+          <h3>Hydrogen VS Electric Cars</h3>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <div class="newTwo">
+          <h3>The Downsides of Al Artistry</h3>
+          <p>What are the possible adverse effects of on-demand Al image generation?</p>
+        </div>
+        <div class="newThree" style="border: none;">
+          <h3>Is VC Funding DRying Up?</h3>
+          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+      </nav>
+    </div>
+    <article id="trend">
+      <div class="one">
+        <div class="img">
+          <img src="/images/photo_2022-12-08_11-03-05.jpg" alt="">
+        </div>
+        <div class="text3">
+          <h2>01</h2>
+          <p>Reviving Retro PCs</p>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+      <div class="two">
+        <div class="img">
+          <img src="/images/photo_2022-12-08_11-03-02.jpg" alt="">
+        </div>
+      <div class="text3">
+        <h2>02</h2>
+        <p>Top 10 Laptops of 2022</p>
+        <p>Our best picks for various needs and budgets.</p>
+      </div>
+      </div>
+      <div class="three">
+        <div class="img">
+          <img src="/images/photo_2022-12-08_11-03-00.jpg" alt="">
+        </div>
+        <div class="text3">
+          <h2>03</h2>
+          <p>The Growth of Gaming</p>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+    </article>
+    <div class="portfolio" id="category">
+      <div class="container">
+        <div class="special_heading">
+          <h2>Categories</h2>
+          <p>Curabitur arcu erat,accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.
+          </p>
+        </div>
+        <ul style="list-style-type: none">
+          <li class="active">All</li>
+          <li>Building</li>
+          <li>Science</li>
+          <li>Robots</li>
+          <li>Art</li>
+        </ul>
+      </div>
+      <div class="images">
+        <div class="box" style="border-top-left-radius: 20px;">
+          <img src="/images/download (1).jpg" alt="">
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="/images/download (2).jpg" alt="">
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="/images/download (3).jpg" alt="">
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="box"style="border-top-right-radius: 20px;">
+          <img src="/images/download.jpg" alt="">
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="box"style="border-bottom-left-radius: 20px;">
+          <img src="/images/OIP (1).jpg" alt="">
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="/images/OIP (2).jpg" alt="">
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="/images/OIP (4).jpg" alt="">
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="box" style="border-bottom-right-radius: 20px;">
+          <img src="/images/th.jpg" alt="">
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+      </div>
+      <div class="MORE">
+        <button>MORE</button>
+      </div>
+    </div>
+    <div class="contact" id="contact">
+      <div class="container">
+        <div class="special_heading">
+          <h2>CONTACT US</h2>
+          <p>Curabitur arcu erat,accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.
+          </p>
+        </div>
+        <div class="contain">
+        <form action="">
+          <input type="text" class="main-input" placeholder="Your Name">
+          <input type="email" class="main-input" placeholder="Your Email">
+          <textarea name="message" class="main-input" placeholder="Your Message" style="max-width: 100%; width:667px; height :182px;"></textarea>
+          <input type="submit" value="Send Message">
+        </form>
+        <div class="phones">
+          <h3>GET IN TOUCH</h3>
+          <p>+00 123.456.789</p>
+          <p>+00 123.456.789</p>
+          <h3>WHERE WE ARE</h3>
+          <address>Awesome Address 17</address>
+          <address>New York, NYC</address>
+          <address>123-4567-890</address>
+          <address>USA</address>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="links2" style="margin-bottom: 5px;">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fas fa-home"></i>
+      <i class="fab fa-linkedin"></i>
+    </div>
+    <div class="end">
+      &copy; 2021<span style="margin: 0px 10px; font-family: 'Noticia Text', serif;">M.</span>All Right Reserved
+    </div>
+  </footer>
+  <script src="/js/search.js"></script>
+  <script src="/js/alljs.js" defer></script>
+</body>
+</html>

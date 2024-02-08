@@ -1,0 +1,15 @@
+:root{
+  --main-color : rgb(242, 108, 79);
+  --back-color :  #e1e1e1;
+  --shadow-color : #beb7b7;
+  --head-font : 'Dancing Script', cursive;
+  --main-font :'Noticia Text', serif;
+}
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html{
+scroll-behavior: smooth;
+}
