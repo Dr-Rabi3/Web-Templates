@@ -195,6 +195,7 @@ ul{
   .home header .toggle:hover + ul li:not(.active){
     border-bottom:none;
   }
+  
 }
 .home .container ul li {
   padding: 35.5px 20px;  
