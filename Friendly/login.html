@@ -14,10 +14,10 @@
             <h1>Friendly</h1>
           </div>
           <div class="createAccount">
-            Don't have account? <a href="#">Sign up</a>
+            Don't have account? <a href="./pages/signup.html">Sign up</a>
           </div>
         </nav>
-        <form>
+        <form id="signIn">
           <h1 style="margin: 10px 0px">Welcome Back</h1>
           <p style="margin: 10px 0px">Login into your account</p>
           <div class="control-row">
@@ -25,15 +25,19 @@
             <button class="googleLogin">Google</button>
           </div>
           <p>Or continue with</p>
-          <input type="email" />
-          <input type="password" />
+          <input type="email" name="email" placeholder="Your Email" />
+          <p class="error">Email Required</p>
+          <input type="password" name="password" placeholder="Password" />
+          <p class="error">Password Required</p>
           <div
             class="control-row"
             style="width: 100%; justify-content: space-between"
           >
             <div class="remember-me">
               <input type="radio" name="remember" id="remember-me" />
-              <label for="remember-me">Remember Me</label>
+              <label for="remember-me">
+                <p style="margin-left: 20px">Remember Me</p>
+              </label>
             </div>
             <a href="#" style="color: red">Forget your password?</a>
           </div>
